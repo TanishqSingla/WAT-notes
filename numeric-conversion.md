@@ -1,5 +1,23 @@
 # Numeric Conversions
 
+## Convert
+
+The `convert` commands as the name suggests converts the types
+
+| Function          | Action                    |
+| ----------------- | ------------------------- |
+| f32.convert_u/i32 | Converts u32 value to f32 |
+| f32.convert_s/i32 | Coverts i32 value to f32  |
+| f32.convert_u/i64 | Converts u64 value to f32 |
+| f32.convert_s/i64 | Converts i64 value to f32 |
+
+| Function          | Action                    |
+| ----------------- | ------------------------- |
+| f64.covnert_u/i32 | Converts u32 value to f64 |
+| f64.convert_s/i32 | Converts i32 value to f64 |
+| f64.convert_u/i64 | Converts u64 value to f64 |
+| f64.convert_s/i64 | converts i64 value to f64 |
+
 ## Truncation
 
 Truncation removes the fractional part of floating point number.
@@ -31,3 +49,11 @@ The `reinterpret` command keeps the bits same of the value but changes the type
 | ------------------- | ----------------------------- |
 | f32.reinterpret/i32 | Reinterprets i32 value to f32 |
 | f64.reinterpret/i64 | Reinterprets i64 value to i32 |
+
+## Wrap
+
+The `wrap` command puts the lower 32 bits of a 64-bit integer into an i32.
+
+| Function     | Action                             |
+| ------------ | ---------------------------------- |
+| i32.wrap/i64 | Wraps bits of i64 bit value to i32 |
