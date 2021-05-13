@@ -50,6 +50,13 @@ The `reinterpret` command keeps the bits same of the value but changes the type
 | f32.reinterpret/i32 | Reinterprets i32 value to f32 |
 | f64.reinterpret/i64 | Reinterprets i64 value to i32 |
 
+## Extend
+
+| Function         | Action                          |
+| ---------------- | ------------------------------- |
+| i64.extend_u/i32 | Converts i32 value to u64 value |
+| i64.extend_s/i32 | Converts i32 value to i64 value |
+
 ## Wrap
 
 The `wrap` command puts the lower 32 bits of a 64-bit integer into an i32.
@@ -57,3 +64,10 @@ The `wrap` command puts the lower 32 bits of a 64-bit integer into an i32.
 | Function     | Action                             |
 | ------------ | ---------------------------------- |
 | i32.wrap/i64 | Wraps bits of i64 bit value to i32 |
+
+## Promote and Demote
+
+| Function        | Action              |
+| --------------- | ------------------- |
+| f32.demote/f64  | Converts f64 to f32 |
+| f64.promote/f32 | Converts f32 to f64 |
